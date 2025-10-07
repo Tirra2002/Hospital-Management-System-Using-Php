@@ -1,0 +1,159 @@
+/* ===================================== Fonts ================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* dark grey/black background */
+  color: #444242; /* light text */
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ===================================== Header ================================== */
+header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #1e1e1e; /* dark header background */
+}
+header .header-nav {
+  background: linear-gradient(90deg, #007bff, #00a8df);
+}
+header .header-nav .nav-item ul li a {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header .header-nav .nav-item ul li a:hover {
+  color: #ffd43b !important;
+}
+
+/* ===================================== Buttons ================================== */
+.btn {
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-success {
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border: none;
+  color: #fff;
+}
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.6);
+}
+.btn-info {
+  background: linear-gradient(90deg, #00a8df, #33bfff);
+  border: none;
+  color: #fff;
+}
+.btn-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 223, 0.6);
+}
+
+/* ===================================== Section Titles ================================== */
+.session-title h2, 
+.inner-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #eee; /* light text */
+}
+.session-title p, 
+.inner-title p {
+  text-align: center;
+  max-width: 750px;
+  margin: 10px auto;
+  color: #bbb; /* lighter grey */
+}
+
+/* ===================================== Cards / Features ================================== */
+.single-key, 
+.blog-single-det, 
+.contact-us-single {
+  background: #1e1e1e; /* dark card background */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+  padding: 25px;
+  transition: 0.3s;
+  color: #ddd; /* light text inside cards */
+}
+.single-key:hover, 
+.blog-single-det:hover, 
+.contact-us-single:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+}
+.single-key i {
+  font-size: 40px;
+  padding: 18px;
+  border-radius: 50%;
+  background: #333; /* darker icon background */
+  color: #00a8df;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.single-key:hover i {
+  background: #00a8df;
+  color: #fff;
+}
+
+/* ===================================== Contact Form ================================== */
+.contact-us-single input, 
+.contact-us-single textarea {
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: #eee;
+  padding: 12px;
+  transition: 0.3s;
+}
+.contact-us-single input::placeholder,
+.contact-us-single textarea::placeholder {
+  color: #bbb;
+}
+.contact-us-single input:focus, 
+.contact-us-single textarea:focus {
+  border-color: #00a8df;
+  box-shadow: 0 0 8px rgba(0,168,223,0.5);
+  background: #333;
+  color: #fff;
+}
+
+/* ===================================== Footer ================================== */
+.footer {
+  background: #111;
+  color: #bbb;
+  padding: 60px 30px;
+}
+.footer h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer .link-list li {
+  border-bottom: 1px solid #444;
+}
+.footer .link-list li a {
+  color: #bbb;
+  transition: 0.3s;
+}
+.footer .link-list li a:hover {
+  color: #fff;
+}
+
+/* Copy Section */
+.copy {
+  background: #000;
+  padding: 15px;
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+}
+.copy a {
+  color: #00a8df;
+}
